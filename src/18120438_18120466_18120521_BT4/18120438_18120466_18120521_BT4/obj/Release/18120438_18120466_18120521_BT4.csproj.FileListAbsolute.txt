@@ -1,0 +1,17 @@
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\bin\Release\18120438_18120466_18120521_BT4.exe.config
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\bin\Release\18120438_18120466_18120521_BT4.exe
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\bin\Release\18120438_18120466_18120521_BT4.pdb
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\bin\Release\SharpGL.dll
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\bin\Release\SharpGL.SceneGraph.dll
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\bin\Release\SharpGL.WinForms.dll
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\bin\Release\SharpGL.pdb
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\bin\Release\SharpGL.xml
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\bin\Release\SharpGL.SceneGraph.pdb
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\bin\Release\SharpGL.SceneGraph.xml
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\bin\Release\SharpGL.WinForms.pdb
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\bin\Release\SharpGL.WinForms.xml
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\obj\Release\_18120438_18120466_18120521_BT4.Form1.resources
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\obj\Release\_18120438_18120466_18120521_BT4.Properties.Resources.resources
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\obj\Release\18120438_18120466_18120521_BT4.csproj.GenerateResource.Cache
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\obj\Release\18120438_18120466_18120521_BT4.exe
+C:\Users\Trung Nam\Documents\GitHub\3d_object_hcmus\src\18120438_18120466_18120521_BT4\18120438_18120466_18120521_BT4\obj\Release\18120438_18120466_18120521_BT4.pdb
