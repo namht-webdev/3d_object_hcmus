@@ -305,9 +305,13 @@ namespace testCk
                 {
                     string path = stickTexture.FileName.ToString(); // đường dẫn đến ảnh chọn làm texture
                     Texture texture = new Texture(); // tạo mới texture
-                    texture.Create(openGLControl.OpenGL, path); // lấy ảnh làm texture từ đường dẫn
-                    objs[posObject].texture = texture; // dán texture cho đối tượng
-                    objs[posObject].isTexture = true; // bật đã dán texture
+                    bool issucess = texture.Create(openGLControl.OpenGL, path); // lấy ảnh làm texture từ đường dẫn
+
+                    if (issucess)
+                    {
+                        objs[posObject].texture = texture; // dán texture cho đối tượng
+                        objs[posObject].isTexture = true; // bật đã dán texture
+                    }
                 }
             }
             else
