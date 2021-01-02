@@ -168,10 +168,8 @@ namespace testCk
                     objs[posObject].tY = ty;
                     objs[posObject].tZ = tz;
                 }
-
-                // kết thúc thay đổi trên đối tượng
-                posObject = -1;
             }
+            else MessageBox.Show("Chon doi tuong truoc khi thao tac");
         }
 
 
@@ -193,9 +191,8 @@ namespace testCk
                     objs[posObject].angleZ = rz;
                 }
 
-                // kết thúc thay đổi trên đối tượng
-                posObject = -1;
             }
+            else MessageBox.Show("Chon doi tuong truoc khi thao tac");
         }
 
         private void btn_OkS_Click(object sender, EventArgs e)
@@ -216,9 +213,8 @@ namespace testCk
                     objs[posObject].sZ = sz;
                 }
 
-                // kết thúc thay đổi trên đối tượng
-                posObject = -1;
             }
+            else MessageBox.Show("Chon doi tuong truoc khi thao tac");
         }
         // khởi tạo hình chóp khi click vào biểu tượng chóp
         private void btn_Pyramid_Click(object sender, EventArgs e)
@@ -317,6 +313,6 @@ namespace testCk
             else
                 MessageBox.Show("Chon doi tuong truoc khi thao tac");
         }
-    
+
     }
 }
