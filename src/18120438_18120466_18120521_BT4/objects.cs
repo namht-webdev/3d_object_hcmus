@@ -21,7 +21,7 @@ namespace testCk
 
         public objects()
         {
-            _color = Color.Cyan;
+            _color = Color.White;
             tX = tY = tZ = 0.0f;
             angleX = angleY = angleZ = 0.0f;
             sX = sY = sZ = 1.0f;
@@ -65,9 +65,7 @@ namespace testCk
 
             // thay đổi góc xoay
 
-
             gl.Rotate(angleX, angleY, angleZ);
-            
         }
 
         public string Name

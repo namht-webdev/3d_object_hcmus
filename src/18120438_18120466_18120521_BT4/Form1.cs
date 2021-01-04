@@ -19,9 +19,9 @@ namespace testCk
         objects obj; // đối tượng mới khởi tạo
         public Form1()
         {
-            
+
             InitializeComponent();
-            loadTreeView(); 
+            loadTreeView();
 
         }
 
@@ -35,7 +35,7 @@ namespace testCk
             gl.Vertex(-50.0f, 0.0f, 0.0f);
             gl.Vertex(50.0f, 0.0f, 0.0f); // Ox
             gl.Color(0.0f, 0.0f, 1.0f);  // màu xanh lam
-            gl.Vertex(0.0f, -30.0f, 0.0f); 
+            gl.Vertex(0.0f, -30.0f, 0.0f);
             gl.Vertex(0.0f, 30.0f, 0.0f); // Oy
             gl.Color(1.0f, 0.0f, 0.0f);  // màu đỏ
             gl.Vertex(0.0f, 0.0f, -50.0f);
@@ -48,7 +48,7 @@ namespace testCk
             gl.Begin(OpenGL.GL_LINES);
 
             // Vẽ lưới trên trục Ox với độ dài 100 và 100 đường mỗi bên
-            for(float i = -50.0f; i < 50.0f; i+=0.5f)
+            for (float i = -50.0f; i < 50.0f; i += 0.5f)
             {
                 if (i != 0)
                 {
@@ -84,12 +84,12 @@ namespace testCk
 
         private void openGLControl_Resized(object sender, EventArgs e)
         {
-           
+
             // Get the OpenGL object.
             OpenGL gl = openGLControl.OpenGL;
             // Set the ModelView matrix.
             gl.MatrixMode(OpenGL.GL_MODELVIEW);
-            
+
             //  Use the 'look at' helper function to position and aim the camera.
             gl.LookAt(cam._eyeX, cam._eyeY, cam._eyeZ, cam._lookX, cam._lookY, cam._lookZ, 0, 1, 0);
             gl.MatrixMode(OpenGL.GL_PROJECTION);
@@ -110,8 +110,7 @@ namespace testCk
             // Create a perspective transformation.
             gl.LookAt(cam._eyeX, cam._eyeY, cam._eyeZ, cam._lookX, cam._lookY, cam._lookZ, 0, 1, 0);
             DrawCoord(gl);
-            if (posObject != -1)
-                objs[posObject].ShowBorder(gl);
+
             // xác định vị trí và góc nhìn của camera
             xCam.Text = Math.Round(cam._eyeX, 3).ToString();
             yCam.Text = Math.Round(cam._eyeY, 3).ToString();
@@ -121,8 +120,15 @@ namespace testCk
             {
                 objs[i].Update(gl);
                 objs[i].Draw(gl);
-                if(objs[i].isTexture)
+                if (objs[i].isTexture)
                     objs[i].DrawTexture(gl);
+            }
+            if (posObject != -1)
+            {
+                //objs[posObject].angleX += 10;
+                //objs[posObject].angleY += 10;
+                //objs[posObject].angleZ += 10;
+                objs[posObject].ShowBorder(gl);
             }
 
             gl.Flush();
@@ -154,7 +160,7 @@ namespace testCk
         {
             // các thay đổi trên đối tượng khi click
             double tx, ty, tz;
-            if(posObject != -1) // kiểm tra đối tượng đang chọn cần thay đổi
+            if (posObject != -1) // kiểm tra đối tượng đang chọn cần thay đổi
             {
                 // ép kiểu dữ liệu về dạng double để thay đổi trên đối tượng
                 // thay đổi vị trí
@@ -186,9 +192,11 @@ namespace testCk
                 // ép kiểu thành công => thay đổi vị trí đối tượng
                 if (issucessRx && issucessRx && issucessRz)
                 {
-                    objs[posObject].angleX = rx;
-                    objs[posObject].angleY = ry;
-                    objs[posObject].angleZ = rz;
+                   
+                        objs[posObject].angleX += rx;
+                        objs[posObject].angleY += ry;
+                        objs[posObject].angleZ += rz;
+                   
                 }
 
             }
@@ -208,9 +216,10 @@ namespace testCk
                 // ép kiểu thành công => thay đổi vị trí đối tượng
                 if (issucessSx && issucessSx && issucessSz)
                 {
-                    objs[posObject].sX = sx;
-                    objs[posObject].sY = sy;
-                    objs[posObject].sZ = sz;
+                        objs[posObject].sX = sx;
+                        objs[posObject].sY = sy;
+                        objs[posObject].sZ = sz;
+
                 }
 
             }
@@ -261,7 +270,7 @@ namespace testCk
                     else isPrism = false;
                     // lấy index của đối tượng được chọn lưu vào posObject
                     posObject = i;
-                    
+
                     if (e.Node.Checked == true)
                         e.Node.NodeFont = fB; // bôi đen đối ượng được click
                     else
@@ -285,7 +294,7 @@ namespace testCk
         // bảng chọn màu của đối tượng
         private void btn_Color_Click(object sender, EventArgs e)
         {
-            if(posObject == -1)
+            if (posObject == -1)
                 MessageBox.Show("Chon doi tuong truoc khi thao tac"); // Chọn đối tượng trước khi thao tác
             //lấy màu từ paintDialog gán cho đối tượng được chỉ điểm
             else if (paintDialog.ShowDialog() == DialogResult.OK)

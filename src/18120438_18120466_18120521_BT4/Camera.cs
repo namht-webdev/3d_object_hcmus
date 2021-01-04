@@ -18,7 +18,7 @@ namespace testCk
         {
             _eyeX = 10; 
             _eyeY = 5;
-            _eyeZ = 10;
+            _eyeZ = 8;
             _lookX = 0;
             _lookY = 0;
             _lookZ = 0;

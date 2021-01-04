@@ -65,7 +65,6 @@ namespace testCk
 
         public override void ShowBorder(OpenGL gl)
         {
-            Update(gl);
             gl.Color(1.0f, 165.0/255f, 0.0f);
             gl.LineWidth(3);
             gl.Begin(OpenGL.GL_LINES);
@@ -132,7 +131,6 @@ namespace testCk
         {
             // chuyển về màu trắng để không bị đè lẫn màu với texture
             _color = Color.Transparent;
-            Update(gl);
             gl.Enable(OpenGL.GL_TEXTURE_2D);
             //Bind the texture.
             texture.Bind(gl);
